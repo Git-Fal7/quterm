@@ -13,6 +13,8 @@ int main(int argc, char *argv[]){
     QApplication app(argc, argv);
     QMainWindow *mainWindow = new QMainWindow();
 
+    setenv("TERM", "konsole-256color", 1);
+
     QTermWidget *console = new QTermWidget();
 
     QFont font = QApplication::font();
